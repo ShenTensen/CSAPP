@@ -11,7 +11,7 @@ int main(void)
 	printf("Enter a number in 16;'q' to quit.\n");
 	while (scanf("%x", &x) == 1)
 	{
-        printBinry(x);
+		printBinry(x);
 		if (even_ones (x))
 			printf ("%x contains an even number of 1s.\n", x);
 		else
