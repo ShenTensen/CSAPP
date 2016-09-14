@@ -1,7 +1,7 @@
 // CSAPP 2.65
 // 2016/4/24
 #include <stdio.h>
-void printBinry(int num);
+void printBinary(int num);
 int even_ones (unsigned x);
 
 int main(void)
@@ -11,11 +11,11 @@ int main(void)
 	printf("Enter a number in 16;'q' to quit.\n");
 	while (scanf("%x", &x) == 1)
 	{
-		printBinry(x);
+		printBinary(x);
 		if (even_ones (x))
 			printf ("%x contains an even number of 1s.\n", x);
 		else
-			printf ("%x contains otherwise\n", x);
+			printf ("%x contains doesn't contain an even number of 1s.\n", x);
 
 		printf("Enter a number in 16\n");
 	}
@@ -38,7 +38,7 @@ int even_ones (unsigned x)
 
 // 粘贴自 http://www.cnblogs.com/cxbblog/p/3704825.html
 // 右移31位，从最高为开始和1做&运算，得到每一位的二进制数值
-void printBinry(int num)
+void printBinary(int num)
 {
     int count = (sizeof(num)<<3)-1;//值为31
     while (count>=0) {
