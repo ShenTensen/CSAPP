@@ -15,7 +15,7 @@ int main(void)
 		if (even_ones (x))
 			printf ("%x contains an even number of 1s.\n", x);
 		else
-			printf ("%x contains doesn't contain an even number of 1s.\n", x);
+			printf ("%x doesn't contain an even number of 1s.\n", x);
 
 		printf("Enter a number in 16\n");
 	}
